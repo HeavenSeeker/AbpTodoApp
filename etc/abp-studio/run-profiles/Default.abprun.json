@@ -1,0 +1,13 @@
+﻿{
+  "applications": {
+    "AbpTodoApp.HttpApi.Host": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44377",
+      "path": "../../../src/AbpTodoApp.HttpApi.Host/AbpTodoApp.HttpApi.Host.csproj",
+      "kubernetesService": ".*-httpapihost$",
+      "execution": {
+        "order": 4
+      }
+    }
+  }
+}

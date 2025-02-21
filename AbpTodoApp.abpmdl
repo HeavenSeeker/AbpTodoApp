@@ -1,0 +1,80 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "4.0.5",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.0.4",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "AbpTodoApp.Application": {
+      "path": "src/AbpTodoApp.Application/AbpTodoApp.Application.abppkg",
+      "folder": "src"
+    },
+    "AbpTodoApp.Domain.Shared": {
+      "path": "src/AbpTodoApp.Domain.Shared/AbpTodoApp.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "AbpTodoApp.Application.Contracts": {
+      "path": "src/AbpTodoApp.Application.Contracts/AbpTodoApp.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "AbpTodoApp.HttpApi": {
+      "path": "src/AbpTodoApp.HttpApi/AbpTodoApp.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "AbpTodoApp.HttpApi.Client": {
+      "path": "src/AbpTodoApp.HttpApi.Client/AbpTodoApp.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "AbpTodoApp.EntityFrameworkCore": {
+      "path": "src/AbpTodoApp.EntityFrameworkCore/AbpTodoApp.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "AbpTodoApp.DbMigrator": {
+      "path": "src/AbpTodoApp.DbMigrator/AbpTodoApp.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "AbpTodoApp.HttpApi.Host": {
+      "path": "src/AbpTodoApp.HttpApi.Host/AbpTodoApp.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "AbpTodoApp.Domain": {
+      "path": "src/AbpTodoApp.Domain/AbpTodoApp.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}

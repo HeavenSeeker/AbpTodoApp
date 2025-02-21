@@ -1,0 +1,49 @@
+{
+  "id": "e0decc8a-5477-4c9e-b59b-05b041b6effd",
+  "template": "app",
+  "versions": {
+    "AbpFramework": "9.0.4",
+    "AbpStudio": "0.9.23",
+    "TargetDotnetFramework": "net9.0"
+  },
+  "modules": {
+    "AbpTodoApp": {
+      "path": "AbpTodoApp.abpmdl"
+    }
+  },
+  "runProfiles": {
+    "Default": {
+      "path": "etc/abp-studio/run-profiles/Default.abprun.json"
+    }
+  },
+  "options": {
+    "httpRequests": {
+      "ignoredUrls": [
+        "^/metrics$"
+      ]
+    }
+  },
+  "creatingStudioConfiguration": {
+    "template": "app",
+    "createdAbpStudioVersion": "0.9.23",
+    "tiered": "false",
+    "runInstallLibs": "true",
+    "useLocalReferences": "false",
+    "multiTenancy": "true",
+    "includeTests": "false",
+    "kubernetesConfiguration": "false",
+    "uiFramework": "no-ui",
+    "mobileFramework": "none",
+    "distributedEventBus": "none",
+    "databaseProvider": "ef",
+    "runDbMigrator": "true",
+    "databaseManagementSystem": "sqlserver",
+    "separateTenantSchema": "false",
+    "createInitialMigration": "true",
+    "theme": "leptonx-lite",
+    "themeStyle": "",
+    "mobileFramework": "none",
+    "publicWebsite": "false",
+    "socialLogin": ""
+  }
+}
