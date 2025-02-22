@@ -16,9 +16,10 @@
       }
     },
     "AbpTodoApp.HttpApi.Host": {
+      "launchUrl": "https://localhost:44377/swagger",
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:44377",
+      "applicationUrl": "https://localhost:44377/",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
