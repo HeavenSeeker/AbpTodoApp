@@ -21,6 +21,7 @@ public class Program
         {
             Log.Information("Starting AbpTodoApp.HttpApi.Host.");
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddResponseCaching();
             builder.Host
                 .AddAppSettingsSecretsJson()
                 .UseAutofac()
@@ -40,7 +41,12 @@ public class Program
                         .WriteTo.Async(c => c.AbpStudio(services));
                 });
             await builder.AddApplicationAsync<AbpTodoAppHttpApiHostModule>();
+
             var app = builder.Build();
+
+            // Use response caching middleware
+            app.UseResponseCaching();
+
             await app.InitializeApplicationAsync();
             await app.RunAsync();
             return 0;
