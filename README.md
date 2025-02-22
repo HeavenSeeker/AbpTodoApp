@@ -1,5 +1,19 @@
 ﻿# AbpTodoApp
 
+# What is done:
+1. Implement the Application Service (ITodoAppService).
+2. Added DB entity and migration with SQL server. Also some DTOs.
+3. Use Repository Pattern (IRepository<TodoItem, Guid>), and Unit of Work pattern used by default in abp.
+4. Implement Caching (response caching middleware) for the GET /api/todo endpoint.
+5. Use Asynchronous Programming (async/await) for database queries.
+6. Add Logging using ABP's built-in logging system(by default using serilog).
+7. Abp handles also Global Exception Handling.
+8. Apply Dependency Injection.
+9. Add Swagger Documentation for API endpoints(by default).
+10. Could not containerize the app because of and error related to hashing.
+
+
+
 ## About this solution
 
 This is a layered startup solution based on [Domain Driven Design (DDD)](https://docs.abp.io/en/abp/latest/Domain-Driven-Design) practises. All the fundamental ABP modules are already installed. Check the [Application Startup Template](https://abp.io/docs/latest/startup-templates/application/index) documentation for more info.
