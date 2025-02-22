@@ -8,9 +8,12 @@ using Volo.Abp.Application.Services;
 
 namespace AbpTodoApp.Services
 {
-public interface ITodoAppService : IApplicationService
+    public interface ITodoAppService : IApplicationService
     {
         Task<List<TodoItemDto>> GetListAsync();
         Task<TodoItemDto> CreateAsync(CreateTodoItemDto createTodoItemDto);
         Task DeleteAsync(Guid id);
-    }}
+        Task<TodoItemDto> GetItemAsync(Guid id);
+        Task<TodoItemDto> UpdateAsync(UpdateTodoItemDto updateTodoItemDto);
+    }
+}
